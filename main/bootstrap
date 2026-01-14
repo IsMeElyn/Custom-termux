@@ -1,5 +1,7 @@
 termux_bootstrap_setup() {
-    command -v dialog >/dev/null 2>&1 || pkg install dialog -y
+command -v dialog >/dev/null 2>&1 || pkg install dialog -y
+    command -v fastfetch >/dev/null 2>&1 || pkg install fastfetch -y
+
 
     BOOTSTRAP="$HOME/.bootstrap"
     touch "$BOOTSTRAP"
